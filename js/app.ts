@@ -19,3 +19,18 @@ const numbers: number[] = [1, 2, 3];
 // Anotación de tipos de función
 let sayHello: (greeting: string) => string;
 sayHello = (greet) => `Hello ${greet}`;
+
+// Anotación de tipo objeto
+let hero: {
+  character: string;
+  powers: string[];
+};
+hero = {
+  character: "Thor",
+  powers: [
+    "Uru-forged hammer Mjolnir",
+    "superhuman strength",
+    "speed",
+    "endurance and resistance to injury",
+  ],
+};
