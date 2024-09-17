@@ -2,7 +2,7 @@ const square = (number: number) => {
   return number * number;
 };
 
-console.log(square(2));
+// console.log(square(2));
 // Annotación de tipo primitivo
 
 let user: string = "John";
@@ -104,8 +104,8 @@ password2 = 1234;
 // let password3 = password2 + 123
 let password3 = password2 + "true";
 
-console.log(typeof password3);
-console.log(password3);
+// console.log(typeof password3);
+// // console.log(password3);
 
 // Uniones, Intersections, Tipos Literales
 interface Bear {
@@ -147,4 +147,26 @@ animal3 = {
   color: "brown",
   speed: 150,
   strength: "max",
+};
+
+hello = undefined;
+console.log(typeof hello);
+hello = null;
+console.log(typeof hello);
+
+const sayHello2 = (greet: string = "Luis"): void => {
+  console.log("Hello " + greet);
+};
+
+sayHello2();
+sayHello2("Dani");
+
+const retornoInalcanzable = (): never => {
+  throw TypeError("Something went wrong");
+};
+
+const retornoInalcanzable2 = (number: number): never => {
+  while (true) {
+    console.log(number++);
+  }
 };
