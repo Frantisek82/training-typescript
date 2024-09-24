@@ -170,3 +170,63 @@ const retornoInalcanzable2 = (number: number): never => {
     console.log(number++);
   }
 };
+
+//-----------------------------------------------------------------
+// Sesión Tutoría - Tema 1: Typescript
+//-----------------------------------------------------------------
+
+// Declaring variables
+let greet: string;
+let number: number;
+let students: string[];
+
+// Assigning values
+greet = "Hello World!";
+number = 22.3;
+students = ["a", "b"];
+
+interface marvel {
+  heroName: string;
+  power: "Suited armour";
+}
+
+let hero2: marvel = {
+  heroName: "Iron Man",
+  power: "Suited armour",
+};
+
+type tres = {
+  3: 3;
+};
+let num3: tres;
+num3 = {
+  3: 3,
+};
+
+type fiveFirstEven = 2 | 4 | 6 | 8 | 10;
+type dos = 2;
+
+type mix = (boolean | number | string | object)[];
+let num2: dos = 2;
+
+type mixedArray = any[][];
+
+type mixedObject = Object[];
+let myObject: mixedObject = [{ id: 1, name: "John" }, {}, { hello: "hola" }];
+
+let evenNumber: fiveFirstEven = 6;
+
+let testingType: mix = ["hola", 10, false, { id: 1, name: "John" }];
+type objectContainer = object[];
+
+let members: objectContainer = [
+  { id: 1, name: "John" },
+  { id: 2, name: "Jane" },
+];
+
+let myArray: mixedArray = [
+  [true],
+  ["hola"],
+  [1, 2, 3, 4, 5],
+  [{ id: 1, name: "John" }],
+];

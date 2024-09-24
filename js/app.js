@@ -93,7 +93,30 @@ console.log(typeof hello);
 hello = null;
 console.log(typeof hello);
 const sayHello2 = (greet = "Luis") => {
-    console.log("Hello " + greet + "!");
+    console.log("Hello " + greet);
 };
 sayHello2();
 sayHello2("Dani");
+const retornoInalcanzable = () => {
+    throw TypeError("Something went wrong");
+};
+const retornoInalcanzable2 = (number) => {
+    while (true) {
+        console.log(number++);
+    }
+};
+//-----------------------------------------------------------------
+// Sesión Tutoría - Tema 1: Typescript
+//-----------------------------------------------------------------
+// Declaring variables
+let greet;
+let number;
+let students;
+// Assigning values
+greet = "Hello World!";
+number = 22.3;
+students = ["a", "b"];
+let hero2 = {
+    heroName: "Iron Man",
+    power: "Suited armour",
+};
